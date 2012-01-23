@@ -30,8 +30,8 @@
         interval: false,
         callback: false,
         get_easing_method: function ( easing ) {
-            var default = function ( x, t, b, c, d ) { return -c * ( t /= d ) * ( t - 2 ) + b; };
-            return typeof easing === 'function' ? easing : get_property( $, 'easing.' + easing, default );
+            var def = function ( x, t, b, c, d ) { return -c * ( t /= d ) * ( t - 2 ) + b; };
+            return typeof easing === 'function' ? easing : get_property( $, 'easing.' + easing, def );
         },
         stop: function () {
             clearInterval( this.interval );
