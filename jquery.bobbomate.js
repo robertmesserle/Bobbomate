@@ -1,3 +1,4 @@
+/*! Bobbomate v1.0 by Robert Messerle  |  https://github.com/robertmesserle/Bobbomate */
 ( function ( $ ) {
     
     function get_property ( obj, namespace, not_found_value ) {
