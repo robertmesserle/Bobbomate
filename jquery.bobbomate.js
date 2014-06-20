@@ -50,7 +50,7 @@
         }
     };
 
-    $.bobbonate = function ( options ) {
+    $.bobbomate = function ( options ) {
         var ret = new Animator( options );
         return {
             stop: $.proxy( ret, 'stop' )
